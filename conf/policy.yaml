@@ -1,0 +1,7 @@
+#policy config
+request_body:
+  countryCode:
+    watch_zk_node_path: "/gateway/global/runtime_policy/country_code"
+
+
+#add new policy config as above sample

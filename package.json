@@ -1,0 +1,11 @@
+{
+  "name": "demo-api-gateway-worker-script",
+  "version": "0.0.1",
+  "description": "demo-api-gateway-worker-script",
+  "scripts": {
+    "pm2": "pm2 start watch_to_update_local_cache_worker.py --name update_local_cache -o ./logs/update_local_cache-out.log -e ./logs/update_local_cache-error.log -p ./pid/update_local_cache.pid",
+    "pm2_qa": "pm2 start watch_to_update_local_cache_worker.py --name update_local_cache -o ./logs/update_local_cache-out.log -e ./logs/update_local_cache-error.log -p ./pid/update_local_cache.pid",
+    "pm2_dev": "pm2 start watch_to_update_local_cache_worker.py --name update_local_cache -o ./logs/update_local_cache-out.log -e ./logs/update_local_cache-error.log -p ./pid/update_local_cache.pid"
+  },
+  "author": "weedge"
+}
